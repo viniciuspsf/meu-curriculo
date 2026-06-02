@@ -11,6 +11,15 @@ header {
     text-align: center;
 }
 
+.foto-perfil {
+    width: 150px;          
+    height: 150px;         
+    object-fit: cover;     
+    border-radius: 35%;    
+    border: 3px solid #46009b; 
+    margin-bottom: 1px;   /* Cria um espaço entre a foto e o texto abaixo */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -22,7 +31,7 @@ nav ul li {
 }
 
 h2 {
-    color: #026be4;
+    color: #46009b;
 }
 
 section {
@@ -46,7 +55,7 @@ form input {
 
 form button {
     padding: 10px;
-    background: #026be4;
+    background: #46009b;
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,7 +63,7 @@ form button {
 }
 
 form button:hover {
-    background: #026be4;
+    background: #46009b;
 }
 
 #responseMessage {
