@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<!-- Fazendo o Head basico-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo de Vinícius Pimentel</title>
+    <title>Currículo de Vinícius Pimentel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Currículo de Vinícius Pimentel</h1>
+        <nav>
+            <!-- Colocando uma lista ordenada-->
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Fazendo Seções para cada parte do currículo-->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um estudante do Curso Análise e Desenvolvimento de Sistemas que estou no segundo semestre, e meu objetivo é me tornar um grande desenvolvedor.</p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul id="skill-list">
+            <li>Conhecimento em Python</li>
+            <li>Pequeno conhecimento em WEB</li>
+            <li>Pequeno conhecimento em Banco de Dados</li>
+            <li>Conhecimento com Vendas</li>
+        </ul>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiência</h2>
+        <ul id="experiencia-list">
+            <li>Vendedor Autônomo - (2026-Presente): Vendas de Produtos Eletrônicos</li>
+            <li>Segurança Eletrônica CFTV - (2025-2026): Instalação e Manutenção de Sistemas de Segurança</li>
+            <li>Sonoplasta - Igreja Batistta Peniel (2025-Presente)</li>
+        </ul>
+    </section>
+
+    <section id="add-data">
+        <h2>Adicionar Novos Dados Currículo</h2>
+        <form id="add-data-form">
+            <label for="novaHabilidade">Nova Habilidade:</label>
+            <input type="text" id="novaHabilidade" name="novaHabilidade" required>
+
+            <label for="novaExperiencia">Nova Experiência:</label>
+            <input type="text" id="novaExperiencia" name="novaExperiencia" required>
+
+            <button type="submit">Adicionar Dados</button>
+        </form>
+        <div id="ResultMessage"></div>
+    </section>
     
+<!-- Script.js para manipulação do formulário -->
+    <script src="script.js"></script>
 </body>
 </html>
