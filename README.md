@@ -1,5 +1,5 @@
 <h3>meu-curriculo</h3>
-<h3></h1> Trabalho de Desenvolvimento de um Currículo usando HTML, CSS, JavaScript, PHP e JSON.</h3>
+<h3>Trabalho de Desenvolvimento de um Currículo usando HTML, CSS, JavaScript, PHP e JSON.</h3>
 
 # index.html:
 - O Cabeçalho de Configuração ("head")
