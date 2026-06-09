@@ -1,7 +1,7 @@
-# meu-curriculo
-<h3>Trabalho de Desenvolvimento de um Currículo usando HTML, CSS, JavaScript, PHP e JSON.</h3>
+<h3>meu-curriculo</h3>
+<h3></h1> Trabalho de Desenvolvimento de um Currículo usando HTML, CSS, JavaScript, PHP e JSON.</h3>
 
-index.html:
+# index.html:
 - O Cabeçalho de Configuração ("head")
   - "meta name="viewport" ...": Garante que o site seja responsivo, ou seja, que se ajuste bem a telas de celulares e computadores.
   - "link rel="stylesheet" href="style.css"": Faz a ponte com aquele arquivo de estilos CSS que analisamos, aplicando o visual moderno (as cores roxas, os cartões brancos e a foto redonda).
@@ -24,7 +24,7 @@ index.html:
 - O Script (script)
   - (script src="script.js"></script): Colocá-lo no final é uma boa prática, pois garante que o navegador primeiro desenhe toda a estrutura da página na tela e só depois execute as funções lógicas do script.
 
-style.css:
+# style.css:
 - Variáveis Globais (:root):
   - O :root define variáveis de CSS. Elas funcionam como "paletas de cores" centralizadas. Se você quiser mudar o tom de roxo do site inteiro, basta alterar aqui.
   - --primary-color e --primary-hover: Tons de roxo usados para botões, bordas e títulos.
@@ -56,7 +56,7 @@ style.css:
 - Mensagem de Feedback (#responseMessage)
   - Aquele elemento que o JavaScript usava para exibir "Sucesso" ou "Erro" ganha um espaçamento superior e o texto em negrito, destacando a resposta para o usuário.
 
-script.js:
+# script.js:
 - Fiz primeiro um envio de formulário:
   - event.preventDefault(): Impede o comportamento padrão do navegador de recarregar a página inteira ao enviar o formulário.
 
@@ -73,7 +73,7 @@ script.js:
 - Inicialização Automática:
   - No final do código "window.onload = loadData;" Ela garante que, assim que a página terminar de carregar pela primeira vez no navegador do usuário, a função loadData() seja executada automaticamente, preenchendo as listas com os dados que já estão salvos no servidor.
 
-app_data.php:
+# app_data.php:
 - Preparando a Resposta (header)
   - header(...): Informa ao navegador e ao JavaScript que a resposta que este arquivo vai dar será no formato JSON (e não uma página HTML normal).
   - $dataFile: Cria uma variável para guardar o nome do arquivo onde os dados serão salvos.
@@ -90,8 +90,8 @@ app_data.php:
   - JSON_PRETTY_PRINT: Deixa o arquivo .json que é salvo no servidor organizado e bonito de ler por humanos (com quebras de linha e espaçamentos).
   - JSON_UNESCAPED_UNICODE: Garante que acentos e caracteres especiais (como "Açougue", "Informática" ou o próprio nome "Vinícius") sejam salvos corretamente sem virar códigos estranhos (como \u00ed).
  
-data.json:
+# data.json:
 - Este é o arquivo data.json, escrito em formato JSON (JavaScript Object Notation). Ele funciona como o Banco de Dados simplificado da sua aplicação.
 
-\img:
+# \img:
 - Coloquei minha foto para passar pro site
