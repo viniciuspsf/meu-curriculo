@@ -10,17 +10,15 @@
 </head>
 <body>
     <header>
-        <img src="img.jpg" alt="Foto de Vinicius" class="foto-perfil">
+        <img src="img/img.jpg" alt="Foto de Vinicius" class="foto-perfil">
         <h1>Currículo - Vinícius Pimentel</h1>
         <nav>
-            <!-- Colocando uma lista ordenada-->
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#informacoes">Informações de Contato</a></li>
+                <li><a href="#informacoes">Contato</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#formacao">Formação</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -37,29 +35,22 @@
         <h2>Informações de Contato</h2>
         <ul id="informacao-list">
             <li>Email: viniciuspsf99@gmail.com</li>
-            <li>Telefone: (28) 99616-9278</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/vinícius-pimentel-silva-ferraço-3527b029b/" target="_blank">linkedin.com/in/vinicius-silva-ferraço</a></li>
+            <li>Telefone: (27) 99616-9278</li>
             <li>Endereço: Vila Velha, Rua Papoula, 118 - Espirito Santo/ES</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/vin%C3%ADcius-pimentel-silva-ferra%C3%A7o-3527b029b/" target="_blank">Visualizar Perfil</a></li>
         </ul>
     </section>
 
+    <!--Essa seção coloquei no data.json-->
     <section id="habilidades">
         <h2>Habilidades</h2>
-        <ul id="skill-list">
-            <li>Conhecimento em Python</li>
-            <li>Pequeno conhecimento em WEB</li>
-            <li>Pequeno conhecimento em Banco de Dados</li>
-            <li>Conhecimento com Vendas</li>
-        </ul>
+        <ul id="skill-list"></ul>
     </section>
-
+    
+<!--Essa seção coloquei no data.json-->
     <section id="experiencia">
         <h2>Experiência</h2>
-        <ul id="experiencia-list">
-            <li>Vendedor Autônomo - (2026-Presente): Vendas de Produtos Eletrônicos</li>
-            <li>Segurança Eletrônica CFTV - (2025-2026): Instalação e Manutenção de Sistemas de Segurança</li>
-            <li>Sonoplasta - Igreja Batistta Peniel (2025-Presente): Apoio técnico em eventos religiosos</li>
-        </ul>
+        <ul id="experience-list"></ul>
     </section>
 
     <section id="formacao">
@@ -67,24 +58,24 @@
         <ul id="formacao-list">
             <li>Ensino Médio Completo - Escola José Bonifácio (2022)</li>
             <li>Curso de Python - Hashtag Treinamentos (2024)</li>
+            <li>Cursando Análise e Desenvolvimento de Sistemas - Estácio (2026-Presente)</li>
         </ul>
     </section>
 
     <section id="add-data">
         <h2>Adicionar Novos Dados Currículo</h2>
         <form id="add-data-form">
-            <label for="novaHabilidade">Nova Habilidade:</label>
-            <input type="text" id="novaHabilidade" name="novaHabilidade" required>
+            <label for="novaHabilidade">Nova Habilidade (Opcional):</label>
+            <input type="text" id="novaHabilidade" name="novaHabilidade">
 
-            <label for="novaExperiencia">Nova Experiência:</label>
-            <input type="text" id="novaExperiencia" name="novaExperiencia" required>
+            <label for="novaExperiencia">Nova Experiência (Opcional):</label>
+            <input type="text" id="novaExperiencia" name="novaExperiencia">
 
             <button type="submit">Adicionar Dados</button>
         </form>
-        <div id="ResultMessage"></div>
+        <div id="responseMessage"></div>
     </section>
 
-<!-- script.js para manipulação do formulário -->
     <script src="script.js"></script>
 </body>
 </html>
