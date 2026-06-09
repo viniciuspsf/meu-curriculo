@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo json_encode(['success' => false, 'message' => 'Preencha pelo menos um dos campos.']);
         exit;
     }   
-    // Se o arquivo não existir, cria um esqueleto válido
+    
     if (!file_exists($dataFile)) {
         file_put_contents($dataFile, json_encode(['skills' => [], 'experiences' => []]));
     }
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $fileContent = file_get_contents($dataFile);
     $data = json_decode($fileContent, true);
     
-    // Garante que $data seja um array caso o arquivo estivesse corrompido ou vazio
+
     if (!is_array($data)) {
         $data = ['skills' => [], 'experiences' => []];
     }
