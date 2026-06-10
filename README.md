@@ -1,6 +1,8 @@
 <h3>meu-curriculo</h3>
 <h3>Trabalho de Desenvolvimento de um Currículo usando HTML, CSS, JavaScript, PHP e JSON.</h3>
 
+LINK DO SITE: https://viniciuspsf.github.io/meu-curriculo/
+
 # index.html:
 - O Cabeçalho de Configuração ("head")
   - "meta name="viewport" ...": Garante que o site seja responsivo, ou seja, que se ajuste bem a telas de celulares e computadores.
